@@ -271,6 +271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Launch Pad
       objectReference: {fileID: 0}
+    - target: {fileID: 5253677171760411127, guid: f0862f95029db0244ba598ca8ed0df6a, type: 3}
+      propertyPath: m_TagString
+      value: Friendly
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0862f95029db0244ba598ca8ed0df6a, type: 3}
 --- !u!1 &963194225
@@ -413,6 +417,101 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13607134913a2c444a38241a7e3be8a5, type: 3}
+--- !u!1 &1835268232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1835268236}
+  - component: {fileID: 1835268235}
+  - component: {fileID: 1835268234}
+  - component: {fileID: 1835268233}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Fuel
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!135 &1835268233
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835268232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1835268234
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835268232}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1835268235
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835268232}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1835268236
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835268232}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -27.7, y: 8.42, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4334938798430391175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -468,6 +567,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Landing Pad
       objectReference: {fileID: 0}
+    - target: {fileID: 8412728860695646757, guid: d1544a971597b274c875a429fac7c0c6, type: 3}
+      propertyPath: m_TagString
+      value: Finish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1544a971597b274c875a429fac7c0c6, type: 3}
 --- !u!1001 &4848971904499119652
@@ -486,12 +589,16 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4848971905670980243, guid: e6fb4b8148d2091489795109e891243a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.311082
+      objectReference: {fileID: 0}
+    - target: {fileID: 4848971905670980243, guid: e6fb4b8148d2091489795109e891243a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -27.75
       objectReference: {fileID: 0}
     - target: {fileID: 4848971905670980243, guid: e6fb4b8148d2091489795109e891243a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.25
+      value: 5.51
       objectReference: {fileID: 0}
     - target: {fileID: 4848971905670980243, guid: e6fb4b8148d2091489795109e891243a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -538,6 +645,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5949680066571761212, guid: a3b505958250d1948ae2a7e88f0a158b, type: 3}
+      propertyPath: tadaClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4666b9b2f7d7ee54f8324e75f2d90de9, type: 3}
+    - target: {fileID: 5949680066571761212, guid: a3b505958250d1948ae2a7e88f0a158b, type: 3}
+      propertyPath: crashClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c8a364f0068199a44adce324ca170ce7, type: 3}
     - target: {fileID: 8908108014554569588, guid: a3b505958250d1948ae2a7e88f0a158b, type: 3}
       propertyPath: m_Name
       value: Rocket
@@ -552,7 +667,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8908108014554569592, guid: a3b505958250d1948ae2a7e88f0a158b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.99
+      value: 4.01
       objectReference: {fileID: 0}
     - target: {fileID: 8908108014554569592, guid: a3b505958250d1948ae2a7e88f0a158b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -585,14 +700,6 @@ PrefabInstance:
     - target: {fileID: 8908108014554569592, guid: a3b505958250d1948ae2a7e88f0a158b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8908108014554569594, guid: a3b505958250d1948ae2a7e88f0a158b, type: 3}
-      propertyPath: m_Drag
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8908108014554569594, guid: a3b505958250d1948ae2a7e88f0a158b, type: 3}
-      propertyPath: m_Constraints
-      value: 56
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3b505958250d1948ae2a7e88f0a158b, type: 3}
