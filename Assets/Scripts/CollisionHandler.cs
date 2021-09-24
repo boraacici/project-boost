@@ -13,6 +13,7 @@ public class CollisionHandler : MonoBehaviour
     ParticleSystem successParticle;
     AudioSource audioSource;
     bool isTransitioning = false;
+    bool collisionDisabled = false;
 
     private void Start()
     {
@@ -22,9 +23,28 @@ public class CollisionHandler : MonoBehaviour
         crashParticle = GameObject.Find("/Rocket/Explosion Particles").GetComponent<ParticleSystem>();
         successParticle = GameObject.Find("/Rocket/Success Particles").GetComponent<ParticleSystem>();
     }
+
+    private void Update()
+    {
+        RespondToDebugKeys();
+    }
+
+    private void RespondToDebugKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            LoadNextLevel();
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            collisionDisabled = !collisionDisabled;
+        }
+
+    }
+
     private void OnCollisionEnter(Collision other)
     {
-        if (isTransitioning)
+        if (isTransitioning || collisionDisabled)
         {
             return;
         }
