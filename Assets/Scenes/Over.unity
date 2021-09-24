@@ -645,14 +645,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5949680066571761212, guid: a3b505958250d1948ae2a7e88f0a158b, type: 3}
-      propertyPath: tadaClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 4666b9b2f7d7ee54f8324e75f2d90de9, type: 3}
-    - target: {fileID: 5949680066571761212, guid: a3b505958250d1948ae2a7e88f0a158b, type: 3}
-      propertyPath: crashClip
-      value: 
-      objectReference: {fileID: 8300000, guid: c8a364f0068199a44adce324ca170ce7, type: 3}
+    - target: {fileID: 1978639258621067647, guid: a3b505958250d1948ae2a7e88f0a158b, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978639258621067647, guid: a3b505958250d1948ae2a7e88f0a158b, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8908108014554569588, guid: a3b505958250d1948ae2a7e88f0a158b, type: 3}
       propertyPath: m_Name
       value: Rocket
